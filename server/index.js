@@ -87,6 +87,15 @@ function save(db) { fs.writeFileSync(DB, JSON.stringify(db, null, 2)); }
 app.use(cors());
 app.use(express.json());
 
+// ── Auth ─────────────────────────────────────────────────────────────────────
+app.post('/api/login', (req, res) => {
+  const { password } = req.body || {};
+  const expected = process.env.APP_PASSWORD;
+  if (!expected) return res.json({ ok: true }); // no password set = open access
+  if (password === expected) return res.json({ ok: true });
+  res.status(401).json({ ok: false, error: 'Incorrect password' });
+});
+
 // ── Scorecards ────────────────────────────────────────────────────────────────
 app.get('/api/scorecards', (req, res) => {
   const db = load();
