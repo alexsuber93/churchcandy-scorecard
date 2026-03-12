@@ -1,0 +1,10 @@
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/
+
+# Keep db.json (your data) but not secrets
+server/.env
+
+# OS files
+.DS_Store

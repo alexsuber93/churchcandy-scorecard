@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "scorecard-backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "server"],
+      "port": 3001,
+      "autoPort": false
+    },
+    {
+      "name": "scorecard-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "client"],
+      "port": 5173
+    }
+  ]
+}

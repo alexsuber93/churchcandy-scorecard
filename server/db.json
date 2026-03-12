@@ -1,0 +1,2139 @@
+{
+  "scorecards": {
+    "directors": {
+      "id": "directors",
+      "name": "Directors",
+      "color": "#6366f1",
+      "metrics": [
+        {
+          "key": "new_clients_signed",
+          "label": "New Clients Signed",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Acquisition",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 13
+          }
+        },
+        {
+          "key": "qualified_calls",
+          "label": "Qualified Calls Conducted",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Acquisition",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 25
+          }
+        },
+        {
+          "key": "total_clients",
+          "label": "Total Number of Clients",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Acquisition",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 500
+          }
+        },
+        {
+          "key": "clients_cancelled",
+          "label": "Clients Cancelled",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Acquisition",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 3
+          }
+        },
+        {
+          "key": "avg_cost_per_lead",
+          "label": "Avg Cost Per Lead",
+          "owner": "Alex",
+          "type": "currency",
+          "category": "Financial",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 25
+          }
+        },
+        {
+          "key": "total_pyvs",
+          "label": "Total PYVs",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Performance",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "testimonies_received",
+          "label": "Testimonies Received",
+          "owner": "Elise",
+          "type": "number",
+          "category": "Performance",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "issue_forms_submitted",
+          "label": "Issue Forms Submitted",
+          "owner": "Elise",
+          "type": "number",
+          "category": "Performance",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 5
+          }
+        },
+        {
+          "key": "clients_not_gp",
+          "label": "Clients Not Green/Purple",
+          "owner": "Elise",
+          "type": "percent",
+          "category": "Performance",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 50
+          }
+        },
+        {
+          "key": "pct_pause_clients",
+          "label": "Pause Clients %",
+          "owner": "Elise",
+          "type": "percent",
+          "category": "Performance",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 10
+          }
+        },
+        {
+          "key": "cpbc_marketing",
+          "label": "CPBC for Marketing",
+          "owner": "Ethan",
+          "type": "currency",
+          "category": "Financial",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 100
+          }
+        },
+        {
+          "key": "ap_15_days",
+          "label": "A/P 15+ Days Past Due",
+          "owner": "Sara",
+          "type": "currency",
+          "category": "Financial",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 1000
+          }
+        },
+        {
+          "key": "refunds",
+          "label": "Refunds",
+          "owner": "Sara",
+          "type": "currency",
+          "category": "Financial",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 0
+          }
+        },
+        {
+          "key": "credits",
+          "label": "Credits",
+          "owner": "Sara",
+          "type": "currency",
+          "category": "Financial",
+          "goodDirection": "neutral",
+          "goal": {
+            "operator": "<=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "sales": {
+      "id": "sales",
+      "name": "Sales",
+      "color": "#3b82f6",
+      "metrics": [
+        {
+          "key": "team_total_sales",
+          "label": "Total Sales",
+          "owner": "Team",
+          "type": "number",
+          "category": "Team Totals",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "team_calls_sched",
+          "label": "Total Calls Scheduled",
+          "owner": "Team",
+          "type": "number",
+          "category": "Team Totals",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "team_calls_conducted",
+          "label": "Total Calls Conducted",
+          "owner": "Team",
+          "type": "number",
+          "category": "Team Totals",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "team_close_rate",
+          "label": "Team Close Rate",
+          "owner": "Team",
+          "type": "percent",
+          "category": "Team Totals",
+          "goodDirection": "up",
+          "goal": null
+        },
+        {
+          "key": "abe_sales",
+          "label": "Number of Sales",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Abe",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 6
+          }
+        },
+        {
+          "key": "abe_calls_sched",
+          "label": "Discovery Calls Scheduled",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Abe",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 25
+          }
+        },
+        {
+          "key": "abe_calls_conducted",
+          "label": "Discovery Calls Conducted",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Abe",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 15
+          }
+        },
+        {
+          "key": "abe_no_shows",
+          "label": "No Call/No Shows",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Abe",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 5
+          }
+        },
+        {
+          "key": "abe_not_qualified",
+          "label": "Not Qualified",
+          "owner": "Abe",
+          "type": "number",
+          "category": "Abe",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 5
+          }
+        },
+        {
+          "key": "alex_sales",
+          "label": "Number of Sales",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Alex",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 6
+          }
+        },
+        {
+          "key": "alex_calls_sched",
+          "label": "Discovery Calls Scheduled",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Alex",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 25
+          }
+        },
+        {
+          "key": "alex_calls_conducted",
+          "label": "Discovery Calls Conducted",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Alex",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 15
+          }
+        },
+        {
+          "key": "alex_no_shows",
+          "label": "No Call/No Shows",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Alex",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 5
+          }
+        },
+        {
+          "key": "alex_not_qualified",
+          "label": "Not Qualified",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Alex",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 5
+          }
+        },
+        {
+          "key": "gabe_sales",
+          "label": "Number of Sales",
+          "owner": "Gabe",
+          "type": "number",
+          "category": "Gabe",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 2
+          }
+        }
+      ]
+    },
+    "client-success": {
+      "id": "client-success",
+      "name": "Client Success",
+      "color": "#10b981",
+      "metrics": [
+        {
+          "key": "total_clients_incl_paused",
+          "label": "Total Clients (Incl. Paused)",
+          "owner": "",
+          "type": "number",
+          "category": "Client Counts",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 600
+          }
+        },
+        {
+          "key": "total_active_clients",
+          "label": "Total Active Clients",
+          "owner": "",
+          "type": "number",
+          "category": "Client Counts",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 550
+          }
+        },
+        {
+          "key": "issues_submitted",
+          "label": "Issues Submitted",
+          "owner": "",
+          "type": "number",
+          "category": "Client Health",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 15
+          }
+        },
+        {
+          "key": "clients_cancelled_paused",
+          "label": "Clients Cancelled/Paused",
+          "owner": "",
+          "type": "number",
+          "category": "Client Health",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 5
+          }
+        },
+        {
+          "key": "pct_purple_chi",
+          "label": "% Clients in Purple CHI",
+          "owner": "",
+          "type": "percent",
+          "category": "CHI Distribution",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 15
+          }
+        },
+        {
+          "key": "pct_green_chi",
+          "label": "% Clients in Green CHI",
+          "owner": "",
+          "type": "percent",
+          "category": "CHI Distribution",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 60
+          }
+        },
+        {
+          "key": "pct_yellow_chi",
+          "label": "% Clients in Yellow CHI",
+          "owner": "",
+          "type": "percent",
+          "category": "CHI Distribution",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 20
+          }
+        },
+        {
+          "key": "pct_red_chi",
+          "label": "% Clients in Red CHI",
+          "owner": "",
+          "type": "percent",
+          "category": "CHI Distribution",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 5
+          }
+        },
+        {
+          "key": "clients_over_1wk_setting_up",
+          "label": "Clients Over 1 Wk Setting Up",
+          "owner": "",
+          "type": "number",
+          "category": "Pipeline",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 5
+          }
+        },
+        {
+          "key": "clients_inactive_ads",
+          "label": "Clients with Inactive Ads",
+          "owner": "",
+          "type": "number",
+          "category": "Pipeline",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 20
+          }
+        },
+        {
+          "key": "clients_over_1wk_onboarding",
+          "label": "Clients Over 1 Wk Onboarding",
+          "owner": "",
+          "type": "number",
+          "category": "Pipeline",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 0
+          }
+        },
+        {
+          "key": "testimonies_received",
+          "label": "Testimonies Received",
+          "owner": "",
+          "type": "number",
+          "category": "Performance",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 10
+          }
+        },
+        {
+          "key": "client_meetings",
+          "label": "Client Meetings",
+          "owner": "",
+          "type": "number",
+          "category": "Performance",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">=",
+            "value": 50
+          }
+        }
+      ]
+    },
+    "meta-ads": {
+      "id": "meta-ads",
+      "name": "Meta Ads",
+      "color": "#f59e0b",
+      "metrics": [
+        {
+          "key": "cost_per_lead",
+          "label": "Cost Per Lead",
+          "owner": "MB",
+          "type": "currency",
+          "category": "Media Buying",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 20
+          }
+        },
+        {
+          "key": "total_over_30_cpl",
+          "label": "Total Over $30 CPL",
+          "owner": "MB",
+          "type": "number",
+          "category": "Media Buying",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 90
+          }
+        },
+        {
+          "key": "over_1wk_setting_up",
+          "label": "Over 1 Week Setting Up",
+          "owner": "MB",
+          "type": "number",
+          "category": "Media Buying",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 5
+          }
+        },
+        {
+          "key": "inactive_ads",
+          "label": "Inactive Ads",
+          "owner": "MB",
+          "type": "number",
+          "category": "Media Buying",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 20
+          }
+        },
+        {
+          "key": "clients_cancelled_paused",
+          "label": "Clients Cancelled/Paused",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Client Management",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 3
+          }
+        },
+        {
+          "key": "total_clients",
+          "label": "Total Number of Clients",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Client Management",
+          "goodDirection": "up",
+          "goal": {
+            "operator": ">",
+            "value": 500
+          }
+        },
+        {
+          "key": "issues_forms_submitted",
+          "label": "Issues Forms Submitted",
+          "owner": "Alex",
+          "type": "number",
+          "category": "Client Management",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<",
+            "value": 15
+          }
+        }
+      ]
+    },
+    "billing": {
+      "id": "billing",
+      "name": "Billing",
+      "color": "#8b5cf6",
+      "metrics": []
+    }
+  },
+  "entries": {
+    "directors": {
+      "2025-12-22": {
+        "week_start": "2025-12-22",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 4,
+          "qualified_calls": 21,
+          "total_clients": null,
+          "clients_cancelled": null,
+          "avg_cost_per_lead": 29.45,
+          "total_pyvs": 4150,
+          "testimonies_received": null,
+          "issue_forms_submitted": null,
+          "clients_not_gp": null,
+          "pct_pause_clients": null,
+          "cpbc_marketing": null,
+          "ap_15_days": 650,
+          "refunds": 0,
+          "credits": 1150
+        }
+      },
+      "2025-12-29": {
+        "week_start": "2025-12-29",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 8,
+          "qualified_calls": 12,
+          "total_clients": 487,
+          "clients_cancelled": 2,
+          "avg_cost_per_lead": 26.03,
+          "total_pyvs": 3035,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 17,
+          "clients_not_gp": 44.7,
+          "pct_pause_clients": 8.4,
+          "cpbc_marketing": 137,
+          "ap_15_days": 2950,
+          "refunds": 0,
+          "credits": 2800
+        }
+      },
+      "2026-01-05": {
+        "week_start": "2026-01-05",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 18,
+          "qualified_calls": 14,
+          "total_clients": 498,
+          "clients_cancelled": 15,
+          "avg_cost_per_lead": 28.31,
+          "total_pyvs": 3234,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 21,
+          "clients_not_gp": 45,
+          "pct_pause_clients": 9.2,
+          "cpbc_marketing": 67,
+          "ap_15_days": 2300,
+          "refunds": 3800,
+          "credits": 1150
+        }
+      },
+      "2026-01-12": {
+        "week_start": "2026-01-12",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 5,
+          "qualified_calls": 10,
+          "total_clients": 507,
+          "clients_cancelled": 11,
+          "avg_cost_per_lead": 31.13,
+          "total_pyvs": 2576,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 18,
+          "clients_not_gp": 43.9,
+          "pct_pause_clients": 8.48,
+          "cpbc_marketing": 58.74,
+          "ap_15_days": 4250,
+          "refunds": 0,
+          "credits": 2150
+        }
+      },
+      "2026-01-19": {
+        "week_start": "2026-01-19",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 10,
+          "qualified_calls": 20,
+          "total_clients": 513,
+          "clients_cancelled": 9,
+          "avg_cost_per_lead": 29.97,
+          "total_pyvs": 3226,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 16,
+          "clients_not_gp": 43.8,
+          "pct_pause_clients": 9.3,
+          "cpbc_marketing": null,
+          "ap_15_days": 2300,
+          "refunds": 0,
+          "credits": 1300
+        }
+      },
+      "2026-01-26": {
+        "week_start": "2026-01-26",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 12,
+          "qualified_calls": 16,
+          "total_clients": 498,
+          "clients_cancelled": 2,
+          "avg_cost_per_lead": 29.76,
+          "total_pyvs": 3238,
+          "testimonies_received": 2,
+          "issue_forms_submitted": 16,
+          "clients_not_gp": 45,
+          "pct_pause_clients": 8.6,
+          "cpbc_marketing": 172.57,
+          "ap_15_days": 3100,
+          "refunds": 1150,
+          "credits": 650
+        }
+      },
+      "2026-02-02": {
+        "week_start": "2026-02-02",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 11,
+          "qualified_calls": 16,
+          "total_clients": 505,
+          "clients_cancelled": 9,
+          "avg_cost_per_lead": 30.76,
+          "total_pyvs": 2647,
+          "testimonies_received": 1,
+          "issue_forms_submitted": 18,
+          "clients_not_gp": 45,
+          "pct_pause_clients": 8.7,
+          "cpbc_marketing": 221,
+          "ap_15_days": null,
+          "refunds": null,
+          "credits": null
+        }
+      },
+      "2026-02-09": {
+        "week_start": "2026-02-09",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 12,
+          "qualified_calls": 32,
+          "total_clients": 516,
+          "clients_cancelled": 9,
+          "avg_cost_per_lead": 30.71,
+          "total_pyvs": 2932,
+          "testimonies_received": 3,
+          "issue_forms_submitted": 19,
+          "clients_not_gp": 44.9,
+          "pct_pause_clients": 10.4,
+          "cpbc_marketing": 80,
+          "ap_15_days": null,
+          "refunds": null,
+          "credits": null
+        }
+      },
+      "2026-02-16": {
+        "week_start": "2026-02-16",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 14,
+          "qualified_calls": 8,
+          "total_clients": 511,
+          "clients_cancelled": 8,
+          "avg_cost_per_lead": 30.67,
+          "total_pyvs": 2942,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 6,
+          "clients_not_gp": 43.3,
+          "pct_pause_clients": 9.7,
+          "cpbc_marketing": 23.69,
+          "ap_15_days": 1150,
+          "refunds": 0,
+          "credits": 1475
+        }
+      },
+      "2026-02-23": {
+        "week_start": "2026-02-23",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 17,
+          "qualified_calls": 6,
+          "total_clients": 506,
+          "clients_cancelled": 15,
+          "avg_cost_per_lead": 31.84,
+          "total_pyvs": 2996,
+          "testimonies_received": 0,
+          "issue_forms_submitted": 18,
+          "clients_not_gp": 39.5,
+          "pct_pause_clients": 10,
+          "cpbc_marketing": 98.34,
+          "ap_15_days": 0,
+          "refunds": 650,
+          "credits": 1300
+        }
+      },
+      "2026-03-02": {
+        "week_start": "2026-03-02",
+        "entered_by": "",
+        "created_at": "2026-03-11T17:13:49.040Z",
+        "updated_at": "2026-03-11T17:13:49.040Z",
+        "metrics": {
+          "new_clients_signed": 4,
+          "qualified_calls": 13,
+          "total_clients": 499,
+          "clients_cancelled": 13,
+          "avg_cost_per_lead": 31.4,
+          "total_pyvs": 2772,
+          "testimonies_received": 4,
+          "issue_forms_submitted": 14,
+          "clients_not_gp": 37.9,
+          "pct_pause_clients": 10,
+          "cpbc_marketing": 78.05,
+          "ap_15_days": 0,
+          "refunds": 1800,
+          "credits": 1950
+        }
+      }
+    },
+    "sales": {
+      "2026-03-01": {
+        "week_start": "2026-03-01",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 0,
+          "abe_calls_sched": 2,
+          "abe_calls_conducted": 0,
+          "abe_no_shows": 2,
+          "abe_not_qualified": 0,
+          "alex_sales": 2,
+          "alex_calls_sched": 26,
+          "alex_calls_conducted": 11,
+          "alex_no_shows": 13,
+          "alex_not_qualified": 3,
+          "gabe_sales": 2,
+          "team_total_sales": 4,
+          "team_calls_sched": 43,
+          "team_calls_conducted": 13,
+          "team_close_rate": 30
+        }
+      },
+      "2026-02-22": {
+        "week_start": "2026-02-22",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 0,
+          "abe_calls_conducted": 0,
+          "abe_no_shows": 0,
+          "abe_not_qualified": 0,
+          "alex_sales": 5,
+          "alex_calls_sched": 9,
+          "alex_calls_conducted": 6,
+          "alex_no_shows": 2,
+          "alex_not_qualified": 0,
+          "gabe_sales": 10,
+          "team_total_sales": 17,
+          "team_calls_sched": 27,
+          "team_calls_conducted": 21,
+          "team_close_rate": 80
+        }
+      },
+      "2026-02-15": {
+        "week_start": "2026-02-15",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 7,
+          "abe_calls_sched": 16,
+          "abe_calls_conducted": 13,
+          "abe_no_shows": 3,
+          "abe_not_qualified": 1,
+          "alex_sales": 5,
+          "alex_calls_sched": 17,
+          "alex_calls_conducted": 7,
+          "alex_no_shows": 5,
+          "alex_not_qualified": 1,
+          "gabe_sales": 2,
+          "team_total_sales": 14,
+          "team_calls_sched": 33,
+          "team_calls_conducted": 20,
+          "team_close_rate": 77
+        }
+      },
+      "2026-02-08": {
+        "week_start": "2026-02-08",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 4,
+          "abe_calls_sched": 16,
+          "abe_calls_conducted": 12,
+          "abe_no_shows": 2,
+          "abe_not_qualified": 3,
+          "alex_sales": 8,
+          "alex_calls_sched": 37,
+          "alex_calls_conducted": 25,
+          "alex_no_shows": 7,
+          "alex_not_qualified": 2,
+          "gabe_sales": 0,
+          "team_total_sales": 12,
+          "team_calls_sched": 53,
+          "team_calls_conducted": 37,
+          "team_close_rate": 38
+        }
+      },
+      "2026-02-01": {
+        "week_start": "2026-02-01",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 5,
+          "abe_calls_sched": 8,
+          "abe_calls_conducted": 8,
+          "abe_no_shows": 0,
+          "abe_not_qualified": 1,
+          "alex_sales": 2,
+          "alex_calls_sched": 14,
+          "alex_calls_conducted": 13,
+          "alex_no_shows": 0,
+          "alex_not_qualified": 4,
+          "gabe_sales": 3,
+          "team_total_sales": 11,
+          "team_calls_sched": 21,
+          "team_calls_conducted": 21,
+          "team_close_rate": 68
+        }
+      },
+      "2026-01-25": {
+        "week_start": "2026-01-25",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 6,
+          "abe_calls_sched": 25,
+          "abe_calls_conducted": 16,
+          "abe_no_shows": 6,
+          "abe_not_qualified": 4,
+          "alex_sales": 2,
+          "alex_calls_sched": 6,
+          "alex_calls_conducted": 4,
+          "alex_no_shows": 1,
+          "alex_not_qualified": 0,
+          "gabe_sales": 4,
+          "team_total_sales": 12,
+          "team_calls_sched": 31,
+          "team_calls_conducted": 20,
+          "team_close_rate": 75
+        }
+      },
+      "2026-01-18": {
+        "week_start": "2026-01-18",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 4,
+          "abe_calls_sched": 13,
+          "abe_calls_conducted": 9,
+          "abe_no_shows": 4,
+          "abe_not_qualified": 1,
+          "alex_sales": 2,
+          "alex_calls_sched": 17,
+          "alex_calls_conducted": 11,
+          "alex_no_shows": 6,
+          "alex_not_qualified": 2,
+          "gabe_sales": 4,
+          "team_total_sales": 10,
+          "team_calls_sched": 30,
+          "team_calls_conducted": 20,
+          "team_close_rate": 58
+        }
+      },
+      "2026-01-11": {
+        "week_start": "2026-01-11",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 2,
+          "abe_calls_conducted": 1,
+          "abe_no_shows": 1,
+          "abe_not_qualified": 0,
+          "alex_sales": 1,
+          "alex_calls_sched": 33,
+          "alex_calls_conducted": 15,
+          "alex_no_shows": 16,
+          "alex_not_qualified": 6,
+          "gabe_sales": 1,
+          "team_total_sales": 5,
+          "team_calls_sched": 35,
+          "team_calls_conducted": 16,
+          "team_close_rate": 50
+        }
+      },
+      "2026-01-04": {
+        "week_start": "2026-01-04",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 6,
+          "abe_calls_sched": 17,
+          "abe_calls_conducted": 7,
+          "abe_no_shows": 5,
+          "abe_not_qualified": 6,
+          "alex_sales": 8,
+          "alex_calls_sched": 29,
+          "alex_calls_conducted": 20,
+          "alex_no_shows": 5,
+          "alex_not_qualified": 8,
+          "gabe_sales": 3,
+          "team_total_sales": 18,
+          "team_calls_sched": 46,
+          "team_calls_conducted": 27,
+          "team_close_rate": 128
+        }
+      },
+      "2025-12-28": {
+        "week_start": "2025-12-28",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 1,
+          "abe_calls_sched": 10,
+          "abe_calls_conducted": 7,
+          "abe_no_shows": 2,
+          "abe_not_qualified": 1,
+          "alex_sales": 2,
+          "alex_calls_sched": 13,
+          "alex_calls_conducted": 5,
+          "alex_no_shows": 6,
+          "alex_not_qualified": 1,
+          "gabe_sales": 5,
+          "team_total_sales": 8,
+          "team_calls_sched": 23,
+          "team_calls_conducted": 12,
+          "team_close_rate": 80
+        }
+      },
+      "2025-12-21": {
+        "week_start": "2025-12-21",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 1,
+          "abe_calls_sched": 10,
+          "abe_calls_conducted": 6,
+          "abe_no_shows": 4,
+          "abe_not_qualified": 3,
+          "alex_sales": 1,
+          "alex_calls_sched": 11,
+          "alex_calls_conducted": 3,
+          "alex_no_shows": 3,
+          "alex_not_qualified": 0,
+          "gabe_sales": 1,
+          "team_total_sales": 4,
+          "team_calls_sched": 21,
+          "team_calls_conducted": 9,
+          "team_close_rate": 44
+        }
+      },
+      "2025-12-14": {
+        "week_start": "2025-12-14",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 3,
+          "abe_calls_sched": 19,
+          "abe_calls_conducted": 13,
+          "abe_no_shows": 5,
+          "abe_not_qualified": 3,
+          "alex_sales": 6,
+          "alex_calls_sched": 34,
+          "alex_calls_conducted": 18,
+          "alex_no_shows": 13,
+          "alex_not_qualified": 6,
+          "gabe_sales": 0,
+          "team_total_sales": 9,
+          "team_calls_sched": 53,
+          "team_calls_conducted": 31,
+          "team_close_rate": 40
+        }
+      },
+      "2025-12-07": {
+        "week_start": "2025-12-07",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 1,
+          "abe_calls_sched": 26,
+          "abe_calls_conducted": 9,
+          "abe_no_shows": 14,
+          "abe_not_qualified": 1,
+          "alex_sales": 1,
+          "alex_calls_sched": 38,
+          "alex_calls_conducted": 18,
+          "alex_no_shows": 15,
+          "alex_not_qualified": 10,
+          "gabe_sales": 0,
+          "team_total_sales": 2,
+          "team_calls_sched": 64,
+          "team_calls_conducted": 15,
+          "team_close_rate": 50
+        }
+      },
+      "2025-11-30": {
+        "week_start": "2025-11-30",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 5,
+          "abe_calls_sched": 15,
+          "abe_calls_conducted": 7,
+          "abe_no_shows": 2,
+          "abe_not_qualified": 5,
+          "alex_sales": 2,
+          "alex_calls_sched": 26,
+          "alex_calls_conducted": 16,
+          "alex_no_shows": 8,
+          "alex_not_qualified": 7,
+          "gabe_sales": 4,
+          "team_total_sales": 11,
+          "team_calls_sched": 41,
+          "team_calls_conducted": 23,
+          "team_close_rate": 45
+        }
+      },
+      "2025-11-23": {
+        "week_start": "2025-11-23",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 3,
+          "abe_calls_sched": 11,
+          "abe_calls_conducted": 2,
+          "abe_no_shows": 4,
+          "abe_not_qualified": 4,
+          "alex_sales": 0,
+          "alex_calls_sched": 0,
+          "alex_calls_conducted": 0,
+          "alex_no_shows": 0,
+          "alex_not_qualified": 0,
+          "gabe_sales": 1,
+          "team_total_sales": 4,
+          "team_calls_sched": 11,
+          "team_calls_conducted": 2,
+          "team_close_rate": 200
+        }
+      },
+      "2025-11-16": {
+        "week_start": "2025-11-16",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 21,
+          "abe_calls_conducted": 9,
+          "abe_no_shows": 10,
+          "abe_not_qualified": 3,
+          "alex_sales": 3,
+          "alex_calls_sched": 39,
+          "alex_calls_conducted": 23,
+          "alex_no_shows": 9,
+          "alex_not_qualified": 8,
+          "gabe_sales": 2,
+          "team_total_sales": 7,
+          "team_calls_sched": 60,
+          "team_calls_conducted": 32,
+          "team_close_rate": 33
+        }
+      },
+      "2025-11-09": {
+        "week_start": "2025-11-09",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 4,
+          "abe_calls_sched": 24,
+          "abe_calls_conducted": 14,
+          "abe_no_shows": 9,
+          "abe_not_qualified": 1,
+          "alex_sales": 2,
+          "alex_calls_sched": 19,
+          "alex_calls_conducted": 11,
+          "alex_no_shows": 7,
+          "alex_not_qualified": 6,
+          "gabe_sales": 3,
+          "team_total_sales": 9,
+          "team_calls_sched": 43,
+          "team_calls_conducted": 33,
+          "team_close_rate": 35
+        }
+      },
+      "2025-11-02": {
+        "week_start": "2025-11-02",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 23,
+          "abe_calls_conducted": 16,
+          "abe_no_shows": 6,
+          "abe_not_qualified": 5,
+          "alex_sales": 2,
+          "alex_calls_sched": 28,
+          "alex_calls_conducted": 15,
+          "alex_no_shows": 8,
+          "alex_not_qualified": 4,
+          "gabe_sales": 2,
+          "team_total_sales": 6,
+          "team_calls_sched": 51,
+          "team_calls_conducted": 31,
+          "team_close_rate": 28
+        }
+      },
+      "2025-10-26": {
+        "week_start": "2025-10-26",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 1,
+          "abe_calls_sched": 25,
+          "abe_calls_conducted": 8,
+          "abe_no_shows": 8,
+          "abe_not_qualified": 2,
+          "alex_sales": 1,
+          "alex_calls_sched": 36,
+          "alex_calls_conducted": 18,
+          "alex_no_shows": 12,
+          "alex_not_qualified": 8,
+          "gabe_sales": 2,
+          "team_total_sales": 5,
+          "team_calls_sched": 61,
+          "team_calls_conducted": 26,
+          "team_close_rate": 20
+        }
+      },
+      "2025-10-19": {
+        "week_start": "2025-10-19",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 31,
+          "abe_calls_conducted": 16,
+          "abe_no_shows": 11,
+          "abe_not_qualified": 7,
+          "alex_sales": 3,
+          "alex_calls_sched": 43,
+          "alex_calls_conducted": 19,
+          "alex_no_shows": 14,
+          "alex_not_qualified": 6,
+          "gabe_sales": 2,
+          "team_total_sales": 7,
+          "team_calls_sched": 74,
+          "team_calls_conducted": 35,
+          "team_close_rate": 31
+        }
+      },
+      "2025-10-12": {
+        "week_start": "2025-10-12",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 1,
+          "abe_calls_sched": 14,
+          "abe_calls_conducted": 8,
+          "abe_no_shows": 5,
+          "abe_not_qualified": 0,
+          "alex_sales": 5,
+          "alex_calls_sched": 18,
+          "alex_calls_conducted": 7,
+          "alex_no_shows": 9,
+          "alex_not_qualified": 0,
+          "gabe_sales": 2,
+          "team_total_sales": 9,
+          "team_calls_sched": 32,
+          "team_calls_conducted": 15,
+          "team_close_rate": 64
+        }
+      },
+      "2025-10-05": {
+        "week_start": "2025-10-05",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 2,
+          "abe_calls_sched": 7,
+          "abe_calls_conducted": 4,
+          "abe_no_shows": 2,
+          "abe_not_qualified": 2,
+          "alex_sales": 1,
+          "alex_calls_sched": 14,
+          "alex_calls_conducted": 11,
+          "alex_no_shows": 3,
+          "alex_not_qualified": 4,
+          "gabe_sales": 2,
+          "team_total_sales": 5,
+          "team_calls_sched": 21,
+          "team_calls_conducted": 15,
+          "team_close_rate": 55
+        }
+      },
+      "2025-09-28": {
+        "week_start": "2025-09-28",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.384Z",
+        "updated_at": "2026-03-11T18:55:01.384Z",
+        "metrics": {
+          "abe_sales": 5,
+          "abe_calls_sched": 11,
+          "abe_calls_conducted": 7,
+          "abe_no_shows": 4,
+          "abe_not_qualified": 3,
+          "alex_sales": 2,
+          "alex_calls_sched": 9,
+          "alex_calls_conducted": 6,
+          "alex_no_shows": 1,
+          "alex_not_qualified": 2,
+          "gabe_sales": 12,
+          "team_total_sales": 21,
+          "team_calls_sched": 20,
+          "team_calls_conducted": 13,
+          "team_close_rate": 262
+        }
+      }
+    },
+    "client-success": {
+      "2026-01-06": {
+        "week_start": "2026-01-06",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "issues_submitted": 10,
+          "clients_cancelled_paused": 3,
+          "pct_purple_chi": 9.8,
+          "pct_green_chi": 37.4,
+          "pct_yellow_chi": 31.9,
+          "pct_red_chi": 17.1,
+          "clients_over_1wk_setting_up": 10,
+          "clients_inactive_ads": 39,
+          "testimonies_received": 0,
+          "client_meetings": 23
+        }
+      },
+      "2026-01-13": {
+        "week_start": "2026-01-13",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 497,
+          "total_active_clients": 451,
+          "issues_submitted": 17,
+          "clients_cancelled_paused": 18,
+          "pct_purple_chi": 9.1,
+          "pct_green_chi": 39.9,
+          "pct_yellow_chi": 31,
+          "pct_red_chi": 14.2,
+          "clients_over_1wk_setting_up": 9,
+          "clients_inactive_ads": 74.6,
+          "testimonies_received": 0,
+          "client_meetings": 61
+        }
+      },
+      "2026-01-20": {
+        "week_start": "2026-01-20",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 506,
+          "total_active_clients": 460,
+          "issues_submitted": 18,
+          "clients_cancelled_paused": 7,
+          "pct_purple_chi": 8.9,
+          "pct_green_chi": 40.4,
+          "pct_yellow_chi": 30.2,
+          "pct_red_chi": 13.7,
+          "clients_over_1wk_setting_up": 13,
+          "clients_inactive_ads": 69,
+          "testimonies_received": 0,
+          "client_meetings": 50
+        }
+      },
+      "2026-01-27": {
+        "week_start": "2026-01-27",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 511,
+          "total_active_clients": 460,
+          "issues_submitted": 12,
+          "clients_cancelled_paused": 13,
+          "pct_purple_chi": 9.3,
+          "pct_green_chi": 41.3,
+          "pct_yellow_chi": 31.1,
+          "pct_red_chi": 12.6,
+          "clients_over_1wk_setting_up": 18,
+          "clients_inactive_ads": 88,
+          "client_meetings": 44
+        }
+      },
+      "2026-02-03": {
+        "week_start": "2026-02-03",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 496,
+          "total_active_clients": 451,
+          "issues_submitted": 15,
+          "clients_cancelled_paused": 12,
+          "pct_purple_chi": 9.1,
+          "pct_green_chi": 39.5,
+          "pct_yellow_chi": 31.7,
+          "pct_red_chi": 13.7,
+          "clients_over_1wk_setting_up": 17,
+          "clients_inactive_ads": 62,
+          "testimonies_received": 1,
+          "client_meetings": 40
+        }
+      },
+      "2026-02-10": {
+        "week_start": "2026-02-10",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 504,
+          "total_active_clients": 460,
+          "issues_submitted": 16,
+          "clients_cancelled_paused": 24,
+          "pct_purple_chi": 9.1,
+          "pct_green_chi": 39.1,
+          "pct_yellow_chi": 32.4,
+          "pct_red_chi": 12.8,
+          "clients_over_1wk_setting_up": 17,
+          "clients_inactive_ads": 49,
+          "testimonies_received": 1,
+          "client_meetings": 50
+        }
+      },
+      "2026-02-17": {
+        "week_start": "2026-02-17",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 516,
+          "total_active_clients": 462,
+          "issues_submitted": 17,
+          "clients_cancelled_paused": 16,
+          "pct_purple_chi": 8.2,
+          "pct_green_chi": 39.4,
+          "pct_yellow_chi": 32.3,
+          "pct_red_chi": 12.6,
+          "clients_over_1wk_setting_up": 11,
+          "clients_inactive_ads": 43,
+          "testimonies_received": 3,
+          "client_meetings": 46
+        }
+      },
+      "2026-02-24": {
+        "week_start": "2026-02-24",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 511,
+          "total_active_clients": 457,
+          "issues_submitted": 8,
+          "clients_cancelled_paused": 20,
+          "pct_purple_chi": 7.7,
+          "pct_green_chi": 40.5,
+          "pct_yellow_chi": 31.5,
+          "pct_red_chi": 11.6,
+          "clients_over_1wk_setting_up": 17,
+          "clients_inactive_ads": 48,
+          "clients_over_1wk_onboarding": 7,
+          "testimonies_received": 0,
+          "client_meetings": 46
+        }
+      },
+      "2026-03-03": {
+        "week_start": "2026-03-03",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 509,
+          "total_active_clients": 455,
+          "issues_submitted": 17,
+          "clients_cancelled_paused": 20,
+          "pct_purple_chi": 7.7,
+          "pct_green_chi": 40.2,
+          "pct_yellow_chi": 29,
+          "pct_red_chi": 11.2,
+          "clients_over_1wk_setting_up": 8,
+          "clients_inactive_ads": 51,
+          "clients_over_1wk_onboarding": 7,
+          "testimonies_received": 0,
+          "client_meetings": 63
+        }
+      },
+      "2026-03-10": {
+        "week_start": "2026-03-10",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:55:01.360Z",
+        "updated_at": "2026-03-11T18:55:01.360Z",
+        "metrics": {
+          "total_clients_incl_paused": 499,
+          "total_active_clients": 448,
+          "pct_purple_chi": 9.2,
+          "pct_green_chi": 41.1,
+          "pct_yellow_chi": 28.1,
+          "pct_red_chi": 9.4,
+          "clients_over_1wk_onboarding": 5
+        }
+      }
+    },
+    "meta-ads": {
+      "2025-07-01": {
+        "week_start": "2025-07-01",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.899Z",
+        "updated_at": "2026-03-11T18:39:29.901Z",
+        "metrics": {
+          "cost_per_lead": 31.43,
+          "total_over_30_cpl": 97,
+          "over_1wk_setting_up": 0,
+          "inactive_ads": 30,
+          "clients_cancelled_paused": 8,
+          "total_clients": 469,
+          "issues_forms_submitted": 9
+        }
+      },
+      "2025-07-08": {
+        "week_start": "2025-07-08",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.901Z",
+        "updated_at": "2026-03-11T18:39:29.901Z",
+        "metrics": {
+          "cost_per_lead": 30.6,
+          "total_over_30_cpl": 96,
+          "over_1wk_setting_up": 0,
+          "inactive_ads": 35,
+          "clients_cancelled_paused": 7,
+          "total_clients": 475,
+          "issues_forms_submitted": 15
+        }
+      },
+      "2025-07-15": {
+        "week_start": "2025-07-15",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 28.02,
+          "total_over_30_cpl": 85,
+          "over_1wk_setting_up": 0,
+          "inactive_ads": 32,
+          "clients_cancelled_paused": 5,
+          "total_clients": 483,
+          "issues_forms_submitted": 8
+        }
+      },
+      "2025-07-22": {
+        "week_start": "2025-07-22",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 27.24,
+          "total_over_30_cpl": 95,
+          "over_1wk_setting_up": 3,
+          "inactive_ads": 42,
+          "clients_cancelled_paused": 8,
+          "total_clients": 488,
+          "issues_forms_submitted": 13
+        }
+      },
+      "2025-07-29": {
+        "week_start": "2025-07-29",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 27.5,
+          "total_over_30_cpl": 103,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 33,
+          "clients_cancelled_paused": 10,
+          "total_clients": 484,
+          "issues_forms_submitted": 10
+        }
+      },
+      "2025-08-05": {
+        "week_start": "2025-08-05",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 25.42,
+          "total_over_30_cpl": 92,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 35,
+          "clients_cancelled_paused": 7,
+          "total_clients": 475,
+          "issues_forms_submitted": 21
+        }
+      },
+      "2025-08-12": {
+        "week_start": "2025-08-12",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 26.17,
+          "total_over_30_cpl": 86,
+          "over_1wk_setting_up": 11,
+          "inactive_ads": 37,
+          "clients_cancelled_paused": 11,
+          "total_clients": 480,
+          "issues_forms_submitted": 15
+        }
+      },
+      "2025-08-19": {
+        "week_start": "2025-08-19",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 27.17,
+          "total_over_30_cpl": 89,
+          "over_1wk_setting_up": 10,
+          "inactive_ads": 40,
+          "clients_cancelled_paused": 8,
+          "total_clients": 486,
+          "issues_forms_submitted": 15
+        }
+      },
+      "2025-08-26": {
+        "week_start": "2025-08-26",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 29.48,
+          "total_over_30_cpl": 88,
+          "over_1wk_setting_up": 11,
+          "inactive_ads": 42,
+          "clients_cancelled_paused": 10,
+          "total_clients": 492,
+          "issues_forms_submitted": 21
+        }
+      },
+      "2025-09-02": {
+        "week_start": "2025-09-02",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 33.24,
+          "total_over_30_cpl": 106,
+          "over_1wk_setting_up": 10,
+          "inactive_ads": 47,
+          "clients_cancelled_paused": 16,
+          "total_clients": 491,
+          "issues_forms_submitted": 19
+        }
+      },
+      "2025-09-09": {
+        "week_start": "2025-09-09",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 35.39,
+          "total_over_30_cpl": 129,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 48,
+          "clients_cancelled_paused": 9,
+          "total_clients": 477,
+          "issues_forms_submitted": 22
+        }
+      },
+      "2025-09-16": {
+        "week_start": "2025-09-16",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 31.04,
+          "total_over_30_cpl": 106,
+          "over_1wk_setting_up": 7,
+          "inactive_ads": 39,
+          "clients_cancelled_paused": 13,
+          "total_clients": 475,
+          "issues_forms_submitted": 22
+        }
+      },
+      "2025-09-23": {
+        "week_start": "2025-09-23",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 27.21,
+          "total_over_30_cpl": 103,
+          "over_1wk_setting_up": 5,
+          "inactive_ads": 62,
+          "clients_cancelled_paused": 9,
+          "total_clients": 478,
+          "issues_forms_submitted": 13
+        }
+      },
+      "2025-09-30": {
+        "week_start": "2025-09-30",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 31.34,
+          "total_over_30_cpl": 86,
+          "over_1wk_setting_up": 7,
+          "inactive_ads": 49,
+          "clients_cancelled_paused": 10,
+          "total_clients": 453,
+          "issues_forms_submitted": 20
+        }
+      },
+      "2025-10-07": {
+        "week_start": "2025-10-07",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 31.87,
+          "total_over_30_cpl": 116,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 50,
+          "clients_cancelled_paused": 6,
+          "total_clients": 444,
+          "issues_forms_submitted": 12
+        }
+      },
+      "2025-10-14": {
+        "week_start": "2025-10-14",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 32.02,
+          "total_over_30_cpl": 115,
+          "over_1wk_setting_up": 17,
+          "inactive_ads": 39,
+          "clients_cancelled_paused": 10,
+          "total_clients": 446,
+          "issues_forms_submitted": 16
+        }
+      },
+      "2025-10-21": {
+        "week_start": "2025-10-21",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 21.71,
+          "total_over_30_cpl": 110,
+          "over_1wk_setting_up": 23,
+          "inactive_ads": 34,
+          "clients_cancelled_paused": 11,
+          "total_clients": 451,
+          "issues_forms_submitted": 22
+        }
+      },
+      "2025-10-28": {
+        "week_start": "2025-10-28",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 24.03,
+          "total_over_30_cpl": 123,
+          "over_1wk_setting_up": 16,
+          "inactive_ads": 43,
+          "clients_cancelled_paused": 4,
+          "total_clients": 453,
+          "issues_forms_submitted": 19
+        }
+      },
+      "2025-11-04": {
+        "week_start": "2025-11-04",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 24.24,
+          "total_over_30_cpl": 117,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 36,
+          "clients_cancelled_paused": 19,
+          "total_clients": 431,
+          "issues_forms_submitted": 16
+        }
+      },
+      "2025-11-11": {
+        "week_start": "2025-11-11",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 24.07,
+          "total_over_30_cpl": 117,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 40,
+          "clients_cancelled_paused": 8,
+          "total_clients": 437,
+          "issues_forms_submitted": 12
+        }
+      },
+      "2025-11-18": {
+        "week_start": "2025-11-18",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 19.76,
+          "total_over_30_cpl": 109,
+          "over_1wk_setting_up": 15,
+          "inactive_ads": 46,
+          "clients_cancelled_paused": 11,
+          "total_clients": 450,
+          "issues_forms_submitted": 14
+        }
+      },
+      "2025-11-25": {
+        "week_start": "2025-11-25",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 20.16,
+          "total_over_30_cpl": 107,
+          "over_1wk_setting_up": 16,
+          "inactive_ads": 48,
+          "clients_cancelled_paused": 4,
+          "total_clients": 454,
+          "issues_forms_submitted": 16
+        }
+      },
+      "2025-12-02": {
+        "week_start": "2025-12-02",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 22.1,
+          "total_over_30_cpl": 123,
+          "over_1wk_setting_up": 18,
+          "inactive_ads": 37,
+          "clients_cancelled_paused": 3,
+          "total_clients": 455,
+          "issues_forms_submitted": 5
+        }
+      },
+      "2025-12-09": {
+        "week_start": "2025-12-09",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 20.1,
+          "total_over_30_cpl": 121,
+          "over_1wk_setting_up": 19,
+          "inactive_ads": 44,
+          "clients_cancelled_paused": 17,
+          "total_clients": 454,
+          "issues_forms_submitted": 22
+        }
+      },
+      "2025-12-16": {
+        "week_start": "2025-12-16",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 20.18,
+          "total_over_30_cpl": 130,
+          "over_1wk_setting_up": 15,
+          "inactive_ads": 45,
+          "clients_cancelled_paused": 8,
+          "total_clients": 451,
+          "issues_forms_submitted": 18
+        }
+      },
+      "2025-12-23": {
+        "week_start": "2025-12-23",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 20.76,
+          "total_over_30_cpl": 127,
+          "over_1wk_setting_up": 16,
+          "inactive_ads": 48,
+          "clients_cancelled_paused": 16,
+          "total_clients": 454,
+          "issues_forms_submitted": 14
+        }
+      },
+      "2025-12-30": {
+        "week_start": "2025-12-30",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 18,
+          "total_over_30_cpl": 91,
+          "over_1wk_setting_up": 15,
+          "inactive_ads": 48,
+          "clients_cancelled_paused": 5,
+          "total_clients": 457,
+          "issues_forms_submitted": 6
+        }
+      },
+      "2026-01-06": {
+        "week_start": "2026-01-06",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 18.95,
+          "total_over_30_cpl": 82,
+          "over_1wk_setting_up": 16,
+          "inactive_ads": 53,
+          "clients_cancelled_paused": 2,
+          "total_clients": 442,
+          "issues_forms_submitted": 17
+        }
+      },
+      "2026-01-13": {
+        "week_start": "2026-01-13",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 16.44,
+          "total_over_30_cpl": 75,
+          "over_1wk_setting_up": 16,
+          "inactive_ads": 51,
+          "clients_cancelled_paused": 13,
+          "total_clients": 452,
+          "issues_forms_submitted": 21
+        }
+      },
+      "2026-01-20": {
+        "week_start": "2026-01-20",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 18.07,
+          "total_over_30_cpl": 97,
+          "over_1wk_setting_up": 21,
+          "inactive_ads": 43,
+          "clients_cancelled_paused": 11,
+          "total_clients": 460,
+          "issues_forms_submitted": 18
+        }
+      },
+      "2026-01-27": {
+        "week_start": "2026-01-27",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 16.93,
+          "total_over_30_cpl": 97,
+          "over_1wk_setting_up": 18,
+          "inactive_ads": 68,
+          "clients_cancelled_paused": 8,
+          "total_clients": 461,
+          "issues_forms_submitted": 16
+        }
+      },
+      "2026-02-03": {
+        "week_start": "2026-02-03",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 18.78,
+          "total_over_30_cpl": 92,
+          "over_1wk_setting_up": 20,
+          "inactive_ads": 56,
+          "clients_cancelled_paused": 9,
+          "total_clients": 472,
+          "issues_forms_submitted": 16
+        }
+      },
+      "2026-02-10": {
+        "week_start": "2026-02-10",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 19.64,
+          "total_over_30_cpl": 113,
+          "over_1wk_setting_up": 24,
+          "inactive_ads": 67,
+          "clients_cancelled_paused": 9,
+          "total_clients": 459,
+          "issues_forms_submitted": 18
+        }
+      },
+      "2026-02-17": {
+        "week_start": "2026-02-17",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 19.77,
+          "total_over_30_cpl": 95,
+          "over_1wk_setting_up": 27,
+          "inactive_ads": 59,
+          "clients_cancelled_paused": 9,
+          "total_clients": 462,
+          "issues_forms_submitted": 19
+        }
+      },
+      "2026-02-24": {
+        "week_start": "2026-02-24",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 18,
+          "total_over_30_cpl": 107,
+          "over_1wk_setting_up": 22,
+          "inactive_ads": 54,
+          "clients_cancelled_paused": 13,
+          "total_clients": 454,
+          "issues_forms_submitted": 6
+        }
+      },
+      "2026-03-03": {
+        "week_start": "2026-03-03",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 20.49,
+          "total_over_30_cpl": 119,
+          "over_1wk_setting_up": 14,
+          "inactive_ads": 56,
+          "clients_cancelled_paused": 15,
+          "total_clients": 456,
+          "issues_forms_submitted": 18
+        }
+      },
+      "2026-03-10": {
+        "week_start": "2026-03-10",
+        "entered_by": "import",
+        "created_at": "2026-03-11T18:39:29.902Z",
+        "updated_at": "2026-03-11T18:39:29.902Z",
+        "metrics": {
+          "cost_per_lead": 19.54,
+          "total_over_30_cpl": 96,
+          "over_1wk_setting_up": 8,
+          "inactive_ads": 49,
+          "clients_cancelled_paused": 13,
+          "total_clients": 449,
+          "issues_forms_submitted": 14
+        }
+      }
+    },
+    "billing": {}
+  }
+}

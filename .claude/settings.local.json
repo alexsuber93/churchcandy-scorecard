@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(mdfind -name \"node\" -onlyin /usr/local)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -X POST http://localhost:3001/api/entries -H \"Content-Type: application/json\" -d '{:*)",
+      "Bash(node server/import-csv.js)",
+      "Bash(node import-meta-ads.js)",
+      "Bash(node import-client-success.js)",
+      "Bash(node import-sales.js)",
+      "Bash(node -e \":*)",
+      "Bash(curl -s \"http://localhost:3001/api/scorecards/meta-ads/entries\")",
+      "Bash(python3 -c \":*)",
+      "Bash(curl -s \"http://localhost:3001/api/scorecards/client-success/entries\")",
+      "Bash(curl -s \"http://localhost:3001/api/scorecards/sales/entries\")",
+      "mcp__c001d365-28f7-40c9-af6f-dab90944f862__get_table_schema",
+      "Bash(pkill -f \"node index.js\")",
+      "Bash(lsof -i :3001)",
+      "Bash(curl -s http://localhost:3001/api/sync/client-success)",
+      "Bash(python3 -m json.tool)"
+    ]
+  }
+}
