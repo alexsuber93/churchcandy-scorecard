@@ -336,7 +336,8 @@ app.get('/api/sync/client-success', async (req, res) => {
 });
 
 // In production, serve the built React app
-if (process.env.NODE_ENV === 'production') {
+const isProduction = process.env.NODE_ENV === 'production' || fs.existsSync(path.join(__dirname, '../client/dist'));
+if (isProduction) {
   const clientDist = path.join(__dirname, '../client/dist');
   app.use(express.static(clientDist));
   app.get('*', (req, res) => {
@@ -344,4 +345,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(PORT, () => console.log(`Scorecard server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Scorecard server running on port ${PORT}`));
