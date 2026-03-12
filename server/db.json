@@ -602,7 +602,92 @@
       "id": "billing",
       "name": "Billing",
       "color": "#8b5cf6",
-      "metrics": []
+      "metrics": [
+        {
+          "key": "overall_declined_payments",
+          "label": "Overall Declined Recurring Payments",
+          "owner": "Mel",
+          "type": "number",
+          "category": "Declines",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 20
+          }
+        },
+        {
+          "key": "weekly_revenue_loss",
+          "label": "Weekly Revenue Loss (Declines)",
+          "owner": "Ariel",
+          "type": "currency",
+          "category": "Declines",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 3000
+          }
+        },
+        {
+          "key": "weekly_revenue_loss_not_paid",
+          "label": "Weekly Revenue Loss (Not Paid)",
+          "owner": "Mel",
+          "type": "currency",
+          "category": "Declines",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 1000
+          }
+        },
+        {
+          "key": "billing_force_cancellation",
+          "label": "Billing Force Cancellation",
+          "owner": "Mel",
+          "type": "number",
+          "category": "Declines",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 0
+          }
+        },
+        {
+          "key": "account_vault_different",
+          "label": "Account Vault vs Paylink (Different)",
+          "owner": "Jessica",
+          "type": "number",
+          "category": "Paylink",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 2
+          }
+        },
+        {
+          "key": "account_vault_same",
+          "label": "Account Vault vs Paylink (Same)",
+          "owner": "Jessica",
+          "type": "number",
+          "category": "Paylink",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 2
+          }
+        },
+        {
+          "key": "new_client_declines",
+          "label": "New Client Declines",
+          "owner": "Jessica",
+          "type": "percent",
+          "category": "Declines",
+          "goodDirection": "down",
+          "goal": {
+            "operator": "<=",
+            "value": 10
+          }
+        }
+      ]
     }
   },
   "entries": {
@@ -2134,6 +2219,113 @@
         }
       }
     },
-    "billing": {}
+    "billing": {
+      "2025-11-16": {
+        "week_start": "2025-11-16",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 13,
+          "weekly_revenue_loss_not_paid": 0,
+          "billing_force_cancellation": 0,
+          "account_vault_different": 7,
+          "account_vault_same": 2,
+          "new_client_declines": 0
+        },
+        "created_at": "2026-03-12T20:48:54.816Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2025-11-30": {
+        "week_start": "2025-11-30",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 17,
+          "weekly_revenue_loss_not_paid": 1150,
+          "billing_force_cancellation": 3,
+          "account_vault_different": 8,
+          "account_vault_same": 3,
+          "new_client_declines": 6
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2025-12-14": {
+        "week_start": "2025-12-14",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 15,
+          "weekly_revenue_loss_not_paid": 1800,
+          "billing_force_cancellation": 0,
+          "account_vault_different": 10,
+          "account_vault_same": 2,
+          "new_client_declines": 9
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2025-12-28": {
+        "week_start": "2025-12-28",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 21,
+          "weekly_revenue_loss_not_paid": 1150,
+          "billing_force_cancellation": 2,
+          "account_vault_different": 11,
+          "account_vault_same": 3,
+          "new_client_declines": 4
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2026-01-11": {
+        "week_start": "2026-01-11",
+        "entered_by": "Import",
+        "metrics": {
+          "account_vault_different": 5,
+          "account_vault_same": 4,
+          "new_client_declines": 27
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2026-01-25": {
+        "week_start": "2026-01-25",
+        "entered_by": "Import",
+        "metrics": {
+          "account_vault_different": 11,
+          "account_vault_same": 4,
+          "new_client_declines": 14
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2026-02-08": {
+        "week_start": "2026-02-08",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 10,
+          "weekly_revenue_loss_not_paid": 650,
+          "billing_force_cancellation": 1,
+          "account_vault_different": 8,
+          "account_vault_same": 1,
+          "new_client_declines": 8
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      },
+      "2026-02-22": {
+        "week_start": "2026-02-22",
+        "entered_by": "Import",
+        "metrics": {
+          "overall_declined_payments": 23,
+          "weekly_revenue_loss_not_paid": 4750,
+          "billing_force_cancellation": 0,
+          "account_vault_different": 12,
+          "account_vault_same": 2,
+          "new_client_declines": 5
+        },
+        "created_at": "2026-03-12T20:48:54.817Z",
+        "updated_at": "2026-03-12T20:48:54.817Z"
+      }
+    }
   }
 }
