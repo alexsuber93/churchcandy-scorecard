@@ -18,18 +18,15 @@ export default function Layout() {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* ── Sidebar ─────────────────────────────────────────────────────────── */}
-      <aside className="w-60 flex-shrink-0 bg-slate-900 flex flex-col">
+      <aside className="w-60 flex-shrink-0 flex flex-col" style={{ backgroundColor: '#2F2F8F' }}>
         {/* Logo */}
-        <div className="px-6 py-6 border-b border-slate-700">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-white font-bold text-sm">
-              CC
-            </div>
-            <div>
-              <p className="text-white font-semibold text-sm leading-none">ChurchCandy</p>
-              <p className="text-slate-400 text-xs mt-0.5">Scorecards</p>
-            </div>
-          </div>
+        <div className="px-5 py-5 flex items-center justify-center" style={{ borderBottom: '1px solid rgba(255,255,255,0.15)' }}>
+          <img
+            src="/logo.png"
+            alt="ChurchCandy Marketing"
+            className="w-full"
+            style={{ maxHeight: '48px', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+          />
         </div>
 
         {/* Scorecard list */}
@@ -40,11 +37,13 @@ export default function Layout() {
               <div key={sc.id}>
                 <NavLink
                   to={`/scorecards/${sc.id}/dashboard`}
-                  className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
-                      ? 'bg-slate-700 text-white'
-                      : 'text-slate-400 hover:text-white hover:bg-slate-800'
-                  }`}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                  style={isActive
+                    ? { backgroundColor: 'rgba(255,255,255,0.18)', color: '#ffffff' }
+                    : { color: 'rgba(255,255,255,0.65)' }
+                  }
+                  onMouseEnter={e => { if (!isActive) e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)'; }}
+                  onMouseLeave={e => { if (!isActive) e.currentTarget.style.backgroundColor = 'transparent'; }}
                 >
                   <div
                     className="w-2.5 h-2.5 rounded-full flex-shrink-0"
@@ -67,16 +66,13 @@ export default function Layout() {
         </nav>
 
         {/* Bottom: Manage Scorecards */}
-        <div className="px-3 py-4 border-t border-slate-700">
+        <div className="px-3 py-4" style={{ borderTop: '1px solid rgba(255,255,255,0.15)' }}>
           <NavLink
             to="/admin"
-            className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
-                isActive
-                  ? 'bg-slate-700 text-white'
-                  : 'text-slate-500 hover:text-white hover:bg-slate-800'
-              }`
-            }
+            className="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-medium transition-colors"
+            style={{ color: 'rgba(255,255,255,0.45)' }}
+            onMouseEnter={e => { e.currentTarget.style.color = '#ffffff'; e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)'; }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.45)'; e.currentTarget.style.backgroundColor = 'transparent'; }}
           >
             <Settings size={15} />
             Manage Scorecards
@@ -85,7 +81,7 @@ export default function Layout() {
       </aside>
 
       {/* ── Main content ────────────────────────────────────────────────────── */}
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto bg-cc-gray">
         <Outlet />
       </main>
     </div>
@@ -100,9 +96,13 @@ function SubNavLink({ to, icon: Icon, label }) {
       className={({ isActive }) =>
         `flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
           isActive
-            ? 'bg-indigo-600 text-white'
-            : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800'
+            ? 'text-white'
+            : 'hover:text-white'
         }`
+      }
+      style={({ isActive }) => isActive
+        ? { backgroundColor: '#FF7A1A' }
+        : { color: 'rgba(255,255,255,0.5)' }
       }
     >
       <Icon size={13} />

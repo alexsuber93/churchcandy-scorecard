@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50:  '#eef2ff',
-          100: '#e0e7ff',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          900: '#312e81',
+        cc: {
+          blue:        '#2F2F8F',
+          'blue-dark': '#22226B',
+          'blue-mid':  '#3A3AAA',
+          orange:      '#FF7A1A',
+          'orange-dk': '#E06010',
+          gray:        '#F2F2F2',
         },
       },
     },

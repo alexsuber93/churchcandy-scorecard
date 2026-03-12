@@ -139,7 +139,7 @@ export default function EntryForm() {
             type="button"
             onClick={handleAirtableSync}
             disabled={syncStatus === 'syncing'}
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 disabled:opacity-60 text-white font-medium text-sm px-4 py-2.5 rounded-lg transition-colors shrink-0"
+            className="flex items-center gap-2 disabled:opacity-60 text-white font-medium text-sm px-4 py-2.5 rounded-lg transition-colors shrink-0" style={{ backgroundColor: '#FF7A1A' }}
           >
             <RefreshCw size={14} className={syncStatus === 'syncing' ? 'animate-spin' : ''} />
             {syncStatus === 'syncing' ? 'Syncing…' : 'Import from Airtable'}
@@ -249,7 +249,7 @@ export default function EntryForm() {
           <button
             type="submit"
             disabled={status === 'saving'}
-            className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-60 text-white font-medium text-sm px-5 py-2.5 rounded-lg transition-colors"
+            className="flex items-center gap-2 disabled:opacity-60 text-white font-medium text-sm px-5 py-2.5 rounded-lg transition-colors" style={{ backgroundColor: '#2F2F8F' }}
           >
             <Save size={15} />
             {status === 'saving' ? 'Saving…' : existingEntry ? 'Update Entry' : 'Save Entry'}

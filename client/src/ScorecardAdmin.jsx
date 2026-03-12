@@ -148,7 +148,8 @@ export default function ScorecardAdmin() {
               <div className="flex gap-1.5">
                 <button
                   onClick={createScorecard}
-                  className="flex-1 text-xs bg-indigo-600 text-white rounded-md py-1 hover:bg-indigo-700 transition-colors"
+                  className="flex-1 text-xs text-white rounded-md py-1 transition-colors"
+                  style={{ backgroundColor: '#2F2F8F' }}
                 >
                   Create
                 </button>
@@ -210,7 +211,7 @@ export default function ScorecardAdmin() {
 
               <button
                 onClick={() => { setAdding(true); setEditing(null); }}
-                className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+                className="flex items-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors" style={{ backgroundColor: '#2F2F8F' }}
               >
                 <Plus size={15} /> Add Metric
               </button>
@@ -427,7 +428,7 @@ function MetricForm({ metric, onChange, onSave, onCancel }) {
       <div className="flex items-center gap-2 pt-1">
         <button
           onClick={onSave}
-          className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium px-4 py-2 rounded-lg transition-colors"
+          className="flex items-center gap-1.5 text-white text-xs font-medium px-4 py-2 rounded-lg transition-colors" style={{ backgroundColor: '#2F2F8F' }}
         >
           <Check size={13} /> Save
         </button>
