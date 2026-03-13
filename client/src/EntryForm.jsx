@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { format, startOfWeek, parseISO } from 'date-fns';
+import { format, startOfWeek, addDays, parseISO } from 'date-fns';
 import { CheckCircle, AlertCircle, Save, RefreshCw } from 'lucide-react';
 import { formatValue } from './metrics.js';
 
@@ -9,15 +9,15 @@ const AIRTABLE_SYNC_ENDPOINTS = {
   'client-success': '/api/sync/client-success',
 };
 
-function getMondayISO(date = new Date()) {
-  const monday = startOfWeek(date, { weekStartsOn: 1 });
-  return format(monday, 'yyyy-MM-dd');
+function getSundayISO(date = new Date()) {
+  const sunday = startOfWeek(date, { weekStartsOn: 0 });
+  return format(sunday, 'yyyy-MM-dd');
 }
 
 export default function EntryForm() {
   const { scorecardId } = useParams();
   const [scorecard, setScorecard]         = useState(null);
-  const [weekStart, setWeekStart]         = useState(getMondayISO());
+  const [weekStart, setWeekStart]         = useState(getSundayISO());
   const [enteredBy, setEnteredBy]         = useState('');
   const [values, setValues]               = useState({});
   const [status, setStatus]               = useState(null); // 'saving' | 'success' | 'error'
@@ -172,17 +172,21 @@ export default function EntryForm() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                Week (starting Monday)
+                Week (Sunday – Saturday)
               </label>
               <input
                 type="date"
                 value={weekStart}
-                onChange={e => setWeekStart(e.target.value)}
+                onChange={e => {
+                  // Always snap to the Sunday of whatever date is picked
+                  const picked = new Date(e.target.value + 'T12:00:00');
+                  setWeekStart(getSundayISO(picked));
+                }}
                 className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
               {weekStart && (
                 <p className="text-xs text-slate-400 mt-1">
-                  Week of {format(parseISO(weekStart), 'MMMM d, yyyy')}
+                  {format(parseISO(weekStart), 'MMM d')} – {format(addDays(parseISO(weekStart), 6), 'MMM d, yyyy')}
                 </p>
               )}
             </div>
