@@ -344,14 +344,16 @@ app.get('/api/sync/client-success', async (req, res) => {
   }
 });
 
-// In production, serve the built React app
-const isProduction = process.env.NODE_ENV === 'production' || fs.existsSync(path.join(__dirname, '../client/dist'));
-if (isProduction) {
-  const clientDist = path.join(__dirname, '../client/dist');
+// In production, serve the built React app (only if dist actually exists)
+const clientDist = path.join(__dirname, '../client/dist');
+const clientIndex = path.join(clientDist, 'index.html');
+if (fs.existsSync(clientIndex)) {
   app.use(express.static(clientDist));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(clientDist, 'index.html'));
-  });
+  app.get('*', (req, res) => res.sendFile(clientIndex));
+  console.log('Serving static React build from', clientDist);
+} else {
+  console.warn('No client/dist found — API-only mode');
+  app.get('/', (req, res) => res.send('Server running — no frontend build found'));
 }
 
 app.listen(PORT, '0.0.0.0', () => console.log(`Scorecard server running on port ${PORT}`));
